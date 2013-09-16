@@ -1,0 +1,201 @@
+_____________________________________
+WICKED RPG was conceived in January 2000.
+_____________________________________
+Try clicking stuff!!
+Use the arrow keys to move and A and S.
+(A)ction
+(S)trike
+If at any point, you lose your keyboard functions, 
+	click in the game.
+== Bites me in the butt again!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notes to the programmer:
+========================
+Use ==!
+Ararys start at 0!
+Use super.whatever where appropriate.
+This message now comes from a file,
+so I don't have to recompile to change it!
+Now I have 1.0.2, 1.1.8, and 1.2.2 JDK.  I got it all, baby!
+JDK 1.1.8 README is a GOOD resource
+
+CURRENT PROJECTS: (prioritized)
+===============================
+Hero should use Person instead of WSprite.  We do a lot of crap to body outside of the class.  New Class Person.  Has direction.
+
+
+0.Battle Algorithm
+------------------
+BASIC OVERVIEW: All Mortals may attack/counter once per 'round'
+All Mortals may be damaged mulitple times per round.
+A Round is when the hero attacks.
+
+Create a Battle object.
+Battle contains pointers to all of the mortals on the screen.
+Battle.round = 0	// which round are we on?
+Battle.turn = 0		// which turn of the round?
+Battle.turns = 0	// The total number of turns for a round.
+Battle.finishRound()
+Battle.newRound()
+Battle.add(Mortal)
+
+Mortal.turn = 0		// which turn is mine?
+Mortal.countered = 0	// Have I countered this round?
+
+When Hero attacks for the first time, Add all of the mortals to the battle.
+newRound()
+	round++;
+	turn = 0;
+	turns = 0;
+Hero may attack one or more enemies depending on his weapon.
+Hero Attacks. All input is disabled.
+Loop: for turn = 0; turn <= turns; turn++
+	All enemies that were attacked get a turn To Counter attack.
+	Enemies sense they are attacked.
+		If hitpoints has decreased and countered = false
+		then set Mortal.turn = Battle.turns++;
+
+	First Enemy that is attacked counters first.
+		Mortal Battle.whosTurnIsIt()
+		Mortal.counter()
+			countered = true;
+			turn = 0;
+	First Enemy counters and may attack other enemies.
+End turn loop.
+finishRound()
+	input enabled.
+
+Consider making some classes static like MapReader and Loader.  We only ever instantiate 1 anyway.
+
+Make simple types use byte, small, etc where appropriate.
+
+More Battle...
+--------------
+enemies animate until they attack (or are done attacking).
+They start animating again when the round is done.
+Create a MortalMode class.(Like Layer) chillin, wounded, attacking.  Then we can ditch all of the booleans.
+// This way, you can add a healer to the gameCanvas, and...
+// a healer can be any type of picture.
+// Mortal maybe should be like this.
+class Healer implements AbstractSprite
+{
+	SimplePicture pict;
+	publice void paint (g)
+	{
+		pict.paint();
+	}
+}
+
+
+
+put final, pulic, private, protected infront of all variables.
+capitalize all static variables.
+
+Make a Satellite/Asteroid class so I can get the click functionality out of the applet and into these objects.
+
+Images are not loading from the JAR file.  Code is however.
+
+Loader.  Use load for loading images, use get to get the images from the loader.
+
+1.Playability
+Add counter attack and visual damage effects (*)
+Allow player to get hit and die ( dsiplay hit points.).
+Create a person class to talk to.  Create a text file for what they will say.  It will be read by the loader?
+	An action will need to be created to talk.  Use a frame/FillRect for the text?
+Create enemy with 1 square attack zone.  Player can attack and enemies will counter attack.  loop.
+Load music from the maps.
+Create an object that can Zoom in to another map file.
+use more rocks and browns in the maps.
+Create a delta save file.  It will be loaded with the map file and contain variable data.
+Create Trees like FF1.
+Create roads.
+Add defense values to all objects.  (can destoy all objects?)
+Add a type along with solid to the terrain types. (water, land, trees)
+Find a 1.2 plugin for netscape, and make 1.1 work for IE (JIT compiler?)
+Create a charactProfile object for when you choose a character. With GUI (taken from go).  Encapulation baby, yah!
+An object that depends on timing (USE REFESH_RATE), not user input for events.  (explosion that gets bigger and goes away.)
+Sound effects need help.
+Intro graphics to look at while data loads.
+1A. MONSTERS!!!
+Move one square
+switch loc w/attacker.(rockmonster)
+counter attack (oldelf)
+weak and strong to certain things.
+attack all around it. (hydra)
+attack 2 squares. (ghost)
+attack with a projectile. (ogre)
+move them.
+Some monsters will move on their own.
+Ambush!
+They attack when you get near them.
+Multiply!!! (slime)
+Surround Hostages (could get killed if they are in the way)
+1B. WEAPONS
+time bomb.  s down drops it s up bombs it.
+dynomite with fuse.
+sword: can put it somewhere and command it back to you.
+1C. ITEMS
+1D. SPRING
+
+2.Good Code
+-------------
+Data Driven Design.
+Clipping.
+Clean up the gx directory.  Having different dirs for every object sups.  This is more work than it seems.  But it really
+	does sup because it causes duplicate code in loader.  Also, you cannot use Wsprite pictures to create and animated picuter.  (that it pretty sucky.)
+I would need to renumber all the images for the files, in the map files, and in the code.  Loader would need to be
+changed significantly as well as all objects that use the loader.
+Rename FILL to RECT on all maps.  FILL will be a new filler to fill all unoccupied squares in a layer.
+	FILL and RECT should work for all objects and all new objects atuomatically.
+	Any objects after FILL and RECT should take plae of that object.  That means that the gamecanvas
+	Will have a unique object in each x,y,layer.  Gamcanvas should not have to kick out old objects.
+make tostring methods for all of the classes.  make constructors that take strings. mapreader will call these.  This way instead of mapreader parsing the string, we can have each object parse the string w/ super (string) and only grab what we need . we can redo all of the maps with the tosting functions.
+There is more to do with direction and coordinate.... ( Change all locations (x,y,h,w, to Rectangle class.  Or use Point?
+Make WCanvas.changeScreens.
+Load all map files when a character is chosen.
+Make sure all updates have the guts and paints just paint.
+Add a revision control for the source files, sound, gx, data.
+Maximize EditPlus utilization.
+re-name go Wicked, Coordinate XYPair, Person Hero.
+reduce magic numbers by using crap like Layer.BOTTOM(1).  SimplePicture.SIZE (20)
+gameCanvas Tracks what things will reappear/are dead, instead of the object itself, so the object can finalize.
+
++++++++++++++++++++++++++
+Completed
++++++++++++++++++++++++++
+??/??/??
+Remove v12 package.
+Compile in 1.1 for no plug in.
+Add text to install link. "Install from Sun Microsystems, makers of Java.  No reboot necessary"
+11/29/00
+Link map file to map file instead of a grid.  Allows for infinite expansion of a map.
+fix deprecated code. (action interface)
+Make a Coordinate class.
+Make a Direction Class.  (UP, DOWN, LEFT, RIGHT)  use it with Person class.
+
++++++++++++++++++++++++++
+Aborted
++++++++++++++++++++++++++
+Load all images at once in a big picture.  Picture names will be 0 -> 999 for simlicity.  Used a 
+JAR file instead.
+Create a small person for walking on the over world.  Cartoony graphics instead.
+Add movement values to all objects.  Aborted for now.  Not really needed for this concept.
+Try a different JAR file for each dir?
+Use Polygon for the satellite and asteroid.

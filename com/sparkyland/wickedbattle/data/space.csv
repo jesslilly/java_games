@@ -1,0 +1,20 @@
+# Mountains 
+Picture,0,0,324,396,false,1,space,space
+Terrain,144,180,36,36,false,1,earth,earth,0,0,0,3.0
+# unit          at      arm unt sel   ai
+UnitPrototype,1,0,scout,1,2,4,6,4
+UnitPrototype,1,1,satelite,1,4,8,4,4
+UnitPrototype,1,2,gunship,0,0,10,7,4
+#
+UnitPrototype,2,0,orb,0,0,5,5,3
+UnitPrototype,2,1,spacedragons,0,0,10,4,5
+UnitPrototype,2,2,spacesnake,0,0,12,6,4
+#
+Unit,72,108,1,0,true,5,10
+Unit,72,144,1,1,false,5,10
+Unit,72,180,1,2,false,5,10
+# bad guys
+Unit,252,144,2,0,false,5,12
+Unit,252,180,2,1,false,5,12
+Unit,252,216,2,2,false,5,12
+Music,battle.mid

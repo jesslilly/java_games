@@ -1,0 +1,25 @@
+UnitPrototype,0,Knights,0,infantry,1,1,4,4,2
+UnitPrototype,0,Knights,1,archers,1,1,4,2,2
+UnitPrototype,0,Knights,2,cavalry,1,1,5,4,3
+#
+UnitPrototype,1,Slimes,0,slime,1,1,2,4,2
+UnitPrototype,1,Slimes,1,eye,1,1,5,2,3
+UnitPrototype,1,Slimes,2,wyrm,1,1,6,3,3
+#
+UnitPrototype,2,Space Alliance,0,scout,1,2,4,6,4
+UnitPrototype,2,Space Alliance,1,satelite,1,4,8,4,4
+UnitPrototype,2,Space Alliance,2,gunship,0,0,10,7,4
+#
+UnitPrototype,3,Space Dragons,0,orb,0,0,5,5,3
+UnitPrototype,3,Space Dragons,1,spacedragons,0,0,10,4,5
+UnitPrototype,3,Space Dragons,2,spacesnake,0,0,12,6,4
+#
+#record type,scenario number,Name,difficulty,picture,objective,description,csv map file,army1,army2
+Scenario,1,Tutorial,Easy,tutorial.gif,Eliminate Slime Army,Defeat the Slime army at the castle in the North.  The Slime army will just defend the caslte.,tutorial.csv,Knights,Slimes
+Scenario,2,Lava Land,Hard,lavaland.gif,Eliminate Slime Army,The Slime army has retreated to Lava Land.  Now the Slimes are desperate.  Prepare for Battle!,lavaland.csv,Knights,Slimes
+Scenario,3,Outer Space,Hard,space.gif,Destroy the enemy fleet,Use Planet Earth for defense!,space.csv,Space Alliance,Space Dragons
+#Scenario,3,Ice Land,Medium,lavaland.gif,Eliminate Slime Army,Battle in Ice Land.,lavaland.csv,*,*
+#Scenario,4,Happy Land,Medium,lavaland.gif,Eliminate Slime Army,Happy Land Battle?,lavaland.csv,*,*
+#Scenario,5,Nuko-War!,Medium,lavaland.gif,Eliminate Slime Army,Yogurt fell from the sky,lavaland.csv,*,*
+# Lama Land
+# Monkey vs Robot

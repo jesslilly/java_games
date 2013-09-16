@@ -1,0 +1,168 @@
+@if exist C:\WINDOWS\winstart.bat C:\WINDOWS\winstart.bat
+
+@rd C:\WINDOWS\TEMP\_ISTMP0.DIR
+
+@if exist C:\WINDOWS\winstart.bat del C:\WINDOWS\winstart.bat 
+@C:\WINDOWS\tmpdelis.bat
+
+@echo off
+doskey /insert > nul
+
+@echo off
+set RAMD=
+set CDROM=
+
+a:\findramd
+
+if errorlevel 255 goto no_ramdrive
+
+if not errorlevel 3 goto no_ramdrive
+
+goto do_shift
+
+:loop
+if errorlevel %1 goto no_shift
+
+:do_shift
+set cdrom=%2
+shift
+shift
+if not %1*==* goto loop
+goto no_ramdrive
+
+:no_shift
+set ramd=%2
+
+if "%RAMD%"=="C" goto c_drive
+
+goto success
+
+:c_drive
+echo Windows Millennium Edition has detected that drive C does not contain a valid
+
+goto success
+
+:no_ramdrive
+echo The Windows Millennium Edition startup disk could not create a temporary drive
+
+:success
+
+@ECHO OFF
+
+ebdundo /check
+if errorlevel 1 goto Exit
+
+echo   2. Do not revert the Restore changes made to my system.
+echo.
+echo Enter a choice:
+
+ebdundo /askandrun
+if not errorlevel 8 goto Done
+
+echo.
+echo System Restore did not revert the changes made by the last restore operation.
+echo.
+goto Exit
+
+echo.
+pause >nul
+
+:Exit
+
+@ECHO OFF
+path=c:\windows;c:\windows\command
+\hibinv.exe
+call \checksr.bat
+IF "%config%"=="QUICK" GOTO QUICK
+set EXPAND=YES
+SET DIRCMD=/O:N
+set LglDrv=27 * 26 Z 25 Y 24 X 23 W 22 V 21 U 20 T 19 S 18 R 17 Q 16 P 15
+set LglDrv=%LglDrv% O 14 N 13 M 12 L 11 K 10 J 9 I 8 H 7 G 6 F 5 E 4 D 3 C
+cls
+call setramd.bat %LglDrv%
+set temp=c:\
+set tmp=c:\
+path=%RAMD%:\;a:\;%path%;%CDROM%:\
+copy command.com %RAMD%:\ > NUL
+set comspec=%RAMD%:\command.com
+copy extract.exe %RAMD%:\ > NUL
+copy readme.txt %RAMD%:\ > NUL
+
+:ERROR
+IF EXIST ebd.cab GOTO EXT
+echo Please insert Windows Millennium Edition Startup Disk 2
+echo.
+pause
+GOTO ERROR
+
+:EXT
+%RAMD%:\extract /y /e /l %RAMD%: ebd.cab > NUL
+echo The diagnostic tools were successfully loaded to drive %RAMD%.
+echo.
+
+IF "%config%"=="NOCD" GOTO QUIT
+IF "%config%"=="HELP" GOTO HELP
+LH %ramd%:\MSCDEX.EXE /D:mscd001 /L:%CDROM%
+::If MSCDEX doesn't find a drive...
+IF ERRORLEVEL 1 SET CDPROB=1
+::
+GOTO QUIT
+
+:HELP
+LH %ramd%:\MSCDEX.EXE /D:mscd001 /L:%CDROM%
+::If MSCDEX doesn't find a drive...
+IF ERRORLEVEL 1 SET CDPROB=1
+cls
+call help.bat
+::
+GOTO QUIT
+
+:QUIT
+call fixit.bat
+rem clean up environment variables
+set CDPROB=
+set CDROM=
+set LglDrv=
+GOTO QUICK
+
+:QUICK
+IF "%CDPROB%"=="1" GOTO CDGONE
+if "%config%"=="HELP" GOTO HELP
+if "%config%"=="NOCD" GOTO NOCDHLP
+echo.
+echo.
+echo Your CD-ROM is drive %CDROM%
+echo.
+echo To view Help, type HELP and then press ENTER.
+GOTO END
+
+:NOCDHLP
+echo.
+echo.
+echo To view Help, type HELP and then press ENTER.
+GOTO END
+
+:HELP
+echo. 
+echo. 
+echo To view Help again, type HELP and then press ENTER.
+GOTO END
+
+:CDGONE
+echo.
+echo.
+echo To view Help, or to view Help again, type HELP
+echo and then press ENTER.
+
+:END
+regedit /s adofre15.reg 
+
+
+path %path%;c:\program\devtools\java\bin
+
+java sun.applet.AppletViewer index.html
+
+
+
+
+

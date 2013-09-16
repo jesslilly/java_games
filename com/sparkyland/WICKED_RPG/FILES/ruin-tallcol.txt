@@ -1,0 +1,61 @@
+#------------------
+# 0 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+# FILL                  x   y
+%FILLPicture    20  60  280 240 false 1 rocks        3   3   this             
+%FILLPicture    20  40  160 40  false 1 rocks        5   5   this             
+Picture         0   140 20  20  false 1 rocks        5   5   this             
+%FILLAnimatedPi 0   20  0   100 true  1 water        7   8   this 9           
+%FILLAnimatedPi 0   160 0   240 true  1 water        7   8   this 9           
+%FILLAnimatedPi 0   0   280 0   true  1 water        7   8   this 9           
+%FILLAnimatedPi 60  20  280 20  true  1 water        7   8   this 9           
+%FILLAnimatedPi 200 40  280 40  true  1 water        7   8   this 9           
+AnimatedPicture 0   120 20  20  false 1 secret water 7   8   this 8           
+#
+Picture         20  20  20  20  false 1 rocks        3   3   this           
+Picture         180 40  20  20  false 1 corner       27  27  this           
+Picture         40  20  20  20  false 1 corner       27  27  this           
+# Pillar
+Picture         0   100 20  20  false 3 pillar       19  19  this             
+Picture         0   120 20  20  false 3 pillar       20  20  this             
+Picture         0   140 20  20  true  2 pillar       21  21  this             
+# Pillar
+Picture         20  60  20  20  false 3 pillar       19  19  this             
+Picture         20  80  20  20  false 3 pillar       20  20  this             
+Picture         20  100 20  20  true  2 pillar       21  21  this             
+# Pillar
+Picture         40  100 20  20  false 3 pillar       19  19  this             
+Picture         40  120 20  20  false 3 pillar       20  20  this             
+Picture         40  140 20  20  true  2 pillar       21  21  this             
+# Pillar
+Picture         60  80  20  20  false 3 pillar       20  20  this             
+Picture         60  100 20  20  true  2 pillar       21  21  this             
+# Pillar
+Picture         80  100 20  20  false 3 pillar       19  19  this             
+Picture         80  120 20  20  false 3 pillar       20  20  this             
+Picture         80  140 20  20  true  2 pillar       21  21  this             
+# Pillar
+Picture         120 100 20  20  false 3 pillar       19  19  this             
+Picture         120 120 20  20  false 3 pillar       20  20  this             
+Picture         120 140 20  20  true  2 pillar       21  21  this             
+# Pillar
+Picture         160 0   20  20  false 3 pillar       19  19  this             
+Picture         160 20  20  20  false 3 pillar       20  20  this             
+Picture         160 40  20  20  true  2 pillar       21  21  this             
+# Huge Pillar!!!!!!!
+%FILLPicture    240 0   240 100 false 3 huge pillar  20  20  this             
+Picture         240 100 20  20  false 3 pillar       20  20  this             
+Picture         240 100 20  20  false 3 pillar       20  20  this             
+Picture         240 120 20  20  true  2 pillar       21  21  this             
+WSprite         230 0   20  20  false 3 cloud        8   11  this 4   0   0   
+WSprite         250 0   20  20  false 3 cloud        9   11  this 5   0   0   
+WSprite         240 20  20  20  false 3 cloud        8   10  this 8   0   0   
+# Mortal
+Mortal          80  100 20  20  true  2 Ghost        0   0   this             
+WSprite         0   20  20  20  false 3 cloud        9   10  this 5   -1  1   
+WSprite         200 60  20  20  false 3 cloud        8   9   this 7   -2  -1   
+%MAP 1            ruin-sv      0            3            .

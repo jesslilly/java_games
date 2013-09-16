@@ -1,0 +1,19 @@
+#------------------
+# 0 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+# FILLS
+%FILLPicture    0   60  100 60  false 1 grass        0   0   this             
+%FILLPicture    160 20  280 60  false 1 grass        0   0   this             
+%FILLPicture    0   80  280 240 false 1 grass        0   0   this             
+%FILLAnimatedPi 0   0   120 40  true  1 water        7   8   this 9         
+%FILLAnimatedPi 120 0   280 0   true  1 water        7   8   this 9         
+#
+AnimatedPicture 140 60  20  20  true  1 water        7   8   this 9         
+Picture         120 60  20  20  false 1 corner       27  27  this           
+Picture         140 20  20  20  false 1 corner       25  25  this           
+Picture         140 40  20  20  false 1 corner       26  26  this           
+%MAP 2            ruin-tallcol 0            level1       .

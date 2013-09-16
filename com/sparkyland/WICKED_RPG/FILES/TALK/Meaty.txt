@@ -1,0 +1,5 @@
+Hi.  My name is Meaty.
+Let me tall you a few things about this world.
+Hit the arrow keys to move around.
+Hit A to perform an Action.
+Hit S to Strike with your sword.

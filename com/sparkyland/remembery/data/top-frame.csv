@@ -1,0 +1,5 @@
+# object, x, y, w, h,solid,l,name,image,fr1,fr2,fre,def
+# Top frame.
+ColorBox,0,0,600,100,false,1,TopBackground,255,255,255
+Picture,5,5,292,91,false,2,remembery1-title,remembery1
+Picture,320,0,32,45,false,2,sam,sam-at-piano

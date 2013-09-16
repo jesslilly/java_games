@@ -1,0 +1,81 @@
+#------------------ 776-1246
+# 1 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+%FILLPicture    0   0   280 240 false 1 grass        0   0   this             
+Picture         0   80  20  20  false 1 grass        1   1   this             
+#
+Picture         20  100 20  20  false 1 grass        1   1   this             
+Picture         20  140 20  20  true  1 grass        3   3   this             
+Picture         20  160 20  20  false 1 grass        13  13  this             
+Picture         20  180 20  20  false 1 grass        13  13  this             
+Picture         20  200 20  20  false 1 grass        13  13  this             
+Picture         20  220 20  20  false 1 grass        13  13  this             
+#
+Picture         40  140 20  20  false 1 grass        13  13  this             
+Picture         40  160 20  20  false 1 grass        13  13  this             
+Picture         40  180 20  20  false 1 grass        13  13  this             
+Picture         40  200 20  20  false 1 grass        13  13  this             
+Picture         40  220 20  20  false 1 grass        13  13  this             
+#
+Picture         60  60  20  20  false 1 grass        1   1   this             
+Picture         60  140 20  20  false 1 grass        13  13  this             
+Picture         60  160 20  20  false 1 grass        13  13  this             
+Picture         60  180 20  20  false 1 grass        13  13  this             
+Picture         60  200 20  20  false 1 grass        13  13  this             
+Picture         60  220 20  20  false 1 grass        13  13  this             
+#
+Picture         80  140 20  20  false 1 grass        13  13  this             
+Picture         80  160 20  20  false 1 grass        13  13  this             
+Picture         80  180 20  20  false 1 grass        13  13  this             
+Picture         80  200 20  20  false 1 grass        13  13  this             
+Picture         80  220 20  20  false 1 grass        13  13  this             
+#
+Picture         100 140 20  20  false 1 grass        13  13  this             
+Picture         100 160 20  20  false 1 grass        13  13  this             
+Picture         100 180 20  20  false 1 grass        13  13  this             
+Picture         100 200 20  20  false 1 grass        13  13  this             
+Picture         100 220 20  20  false 1 grass        13  13  this             
+#
+Picture         140 120 20  20  false 1 grass        2   2   this             
+Picture         140 140 20  20  false 1 grass        2   2   this             
+Picture         140 160 20  20  false 1 grass        2   2   this             
+#
+Picture         280 140 20  20  false 1 grass        1   1   this             
+Picture         280 160 20  20  false 1 grass        1   1   this             
+# House         
+AnimatedPicture 120 40  20  20  true  3 chimney      5   6   this 4           
+Picture         100 60  20  20  true  2 wall         6   6   this             
+Picture         120 60  20  20  true  2 wall         12  12  this             
+Picture         140 60  20  20  true  2 wall         6   6   this             
+Picture         160 60  20  20  true  2 wall         6   6   this             
+Picture         180 60  20  20  true  2 wall         6   6   this             
+Picture         100 80  20  20  true  2 wall         11  11  this             
+Picture         120 80  20  20  true  2 wall         4   4   this             
+Picture         140 80  20  20  true  2 wall         4   4   this             
+Picture         160 80  20  20  true  2 wall         4   4   this             
+Picture         180 80  20  20  true  2 wall         10  10  this             
+Picture         100 100 20  20  true  2 wall         11  11  this             
+Picture         120 100 20  20  true  2 wall         4   4   this             
+Picture         160 100 20  20  true  2 wall         4   4   this             
+Picture         180 100 20  20  true  2 wall         10  10  this             
+AnimatedPicture 180 120 20  20  true  2 fires        0   3   this 2           
+Picture         100 120 20  20  true  2 barrel       18  18  this             
+Picture         120 120 20  20  true  2 barrel       18  18  this             
+Picture         40  40  20  20  false 3 plant        15  15  this             
+Picture         40  60  20  20  true  2 plant        14  14  this             
+AnimatedPicture 220 160 20  20  false 3 lantern      9   12  this 5           
+Picture         220 180 20  20  false 3 lantern      22  22  this             
+Picture         220 200 20  20  true  2 lantern      23  23  this             
+WSprite         100 180 20  20  false 3 cloud        10  11  this 8   1   3   
+WSprite         120 140 20  20  false 3 cloud        8   9   this 5   3   2   
+# Mortal
+Mortal          160 200 20  20  true  2 Ghost        0   0   this             
+Mortal          200 200 20  20  true  2 Ghost        0   0   this             
+Mortal          200 120 20  20  true  2 Heath        4   4   this             
+Mortal          160 120 20  20  true  2 Meaty        3   3   this             
+%MAP 5            3            1            7            .
+# End with a null line.

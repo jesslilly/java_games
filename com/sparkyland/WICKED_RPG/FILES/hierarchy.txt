@@ -1,0 +1,23 @@
+
+WButton extends Button
+WTextArea extends TextArea
+WTextField extends TextField
+Coordinate
+Direction 
+go extends Applet implements Runnable, KeyListener
+Loader
+MapReader
+Battle
+WCanvas extends Canvas implements MouseListener, MouseMotionListener, ActionListener, KeyListener
+
+SimplePicture
+    |----------|
+Picture    TalkWindow
+    |
+AnimatedPicture
+    |
+WSprite-----------|
+    |          Weapon
+Mortal            |---------|
+    |          Sword  RangedWeapon
+Person

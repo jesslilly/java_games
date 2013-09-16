@@ -1,0 +1,47 @@
+# Border
+%FILL,Picture,0,0,288,0,true,1,lava,lava,0,0
+%FILL,Picture,0,360,288,360,true,1,lava,lava,0,0
+%FILL,Picture,0,36,0,324,true,1,lava,lava,0,0
+%FILL,Picture,288,36,288,324,true,1,lava,lava,0,0
+# Lava Flow
+%FILL,Picture,144,216,144,324,true,1,lava,lava,0,0
+# Mountains 
+%FILL,Terrain,72,144,216,180,false,1,volcano,volcano,0,0,0,2.0
+%FILL,Terrain,108,216,108,252,false,1,volcano,volcano,0,0,0,2.0
+%FILL,Terrain,180,216,180,252,false,1,volcano,volcano,0,0,0,2.0
+%FILL,Terrain,108,108,180,108,false,1,volcano,volcano,0,0,0,2.0
+# small rocks.
+%FILL,Picture,36,36,252,72,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,36,108,72,108,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,216,108,252,108,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,36,144,36,324,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,72,216,72,324,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,108,288,108,324,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,180,288,180,324,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,216,216,216,324,false,1,brrockssmall,brrockssmall,0,0
+%FILL,Picture,252,144,252,324,false,1,brrockssmall,brrockssmall,0,0
+#------------------
+# unit          at      arm unt sel   ai
+UnitPrototype,1,0,infantry,1,1,4,4,2
+UnitPrototype,1,1,archers,1,1,4,2,2
+UnitPrototype,1,2,cavalry,1,1,5,4,3
+#
+UnitPrototype,2,0,slime,1,1,2,4,2
+UnitPrototype,2,1,eye,1,1,5,2,3
+UnitPrototype,2,2,wyrm,1,1,6,3,3
+#
+Unit,72,72,1,0,true,5,10
+Unit,72,108,1,2,false,5,20
+Unit,72,144,1,2,false,5,10
+Unit,72,180,1,2,false,5,10
+Unit,72,216,1,1,false,5,10
+Unit,72,252,1,1,false,5,10
+# bad guys
+Unit,252,252,2,2,false,5,10
+Unit,252,216,2,2,false,5,30
+Unit,252,180,2,2,false,5,10
+Unit,252,144,2,1,false,5,10
+Unit,252,108,2,1,false,5,10
+Unit,252,72,2,1,false,5,10
+Unit,252,36,2,0,false,5,10
+Music,ninja.mid

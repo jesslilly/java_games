@@ -1,0 +1,38 @@
+#------------------
+# 0 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+# big fill
+%FILLPicture    0   0   180 240 false 1 grass        0   0   this             
+# verticle grass fills.
+%FILLPicture    200 0   200 60  false 1 grass        0   0   this             
+%FILLPicture    200 180 200 240 false 1 grass        2   2   this             
+%FILLPicture    220 0   220 40  false 1 grass        0   0   this             
+%FILLPicture    220 200 220 240 false 1 grass        0   0   this             
+%FILLPicture    240 0   240 20  false 1 grass        0   0   this             
+%FILLPicture    240 220 240 240 false 1 grass        0   0   this             
+Picture         260 0   20  20  false 1 grass        0   0   this           
+Picture         260 240 20  20  false 1 grass        0   0   this           
+# verticle water fills.
+%FILLAnimatedPi 200 100 200 140 true  1 water        7   8   this 9         
+%FILLAnimatedPi 220 80  220 100 true  1 water        7   8   this 9         
+%FILLAnimatedPi 220 140 220 160 true  1 water        7   8   this 9         
+%FILLAnimatedPi 240 60  240 180 true  1 water        7   8   this 9         
+%FILLAnimatedPi 260 40  260 200 true  1 water        7   8   this 9         
+%FILLAnimatedPi 280 0   280 240 true  1 water        7   8   this 9         
+# diagonals.
+Picture         260 20  20  20  false 1 corner       24  24  this           
+Picture         240 40  20  20  false 1 corner       24  24  this           
+Picture         220 60  20  20  false 1 corner       24  24  this           
+Picture         200 80  20  20  false 1 corner       24  24  this           
+#
+Picture         200 160 20  20  false 1 corner       27  27  this           
+Picture         220 180 20  20  false 1 corner       27  27  this           
+Picture         240 200 20  20  false 1 corner       27  27  this           
+Picture         260 220 20  20  false 1 corner       27  27  this            
+# island
+Picture         220 120 20  20  false 1 grass        0   0   this           
+%MAP 0            level1       2            8            .

@@ -1,0 +1,35 @@
+# object, x, y, w, h,solid,l,name,image,fr1,fr2,fre,def
+# Top frame.
+IncludeCSVFile,top-frame.csv
+WButton,380,10,100,30,false,2,quitGame,buttonbackground,0,0,0,0,0,SansSerif,Quit Game,White,Clear,ClearAndLoad,titlescreen.csv
+# Stars in Top Frame.
+BoundedSprite,1,-2003,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,50,-2030,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,108,-2001,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,180,-2010,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,240,-2005,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,299,-2050,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,380,-2004,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,420,-2040,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,480,-2020,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,544,-2030,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+# Stars in Top Frame.
+BoundedSprite,1,-2100,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,55,-2130,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,107,-2160,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,170,-2110,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,243,-2170,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,291,-2150,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,360,-2100,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,424,-2140,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,484,-2130,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+BoundedSprite,550,-2120,50,50,false,1,star,star,0,0,0,0,15,0,-2200,600,500,3
+# Bottom frame.
+ColorBox,0,100,600,400,false,1,GameBackground,220,220,200
+AnimatedPicture,120,340,55,98,false,2,bugle,bugle,1,2,4
+WLabel,210,400,70,30,false,2,clicks,null,0,0,0,0,0,SansSerif,Clicks,White,Clear
+# Stars in Bottom Frame.
+BoundedSprite,250,0,50,50,false,1,star,star,0,0,0,1,1,-50,-50,600,500,3
+BoundedSprite,0,210,50,50,false,1,star,star,0,0,0,1,1,-50,-50,600,500,3
+BoundedSprite,400,250,50,50,false,1,star,star,0,0,0,1,1,-50,-50,600,500,3
+BoundedSprite,210,300,50,50,false,1,star,star,0,0,0,1,1,-50,-50,600,500,3

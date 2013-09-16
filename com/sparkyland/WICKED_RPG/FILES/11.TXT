@@ -1,0 +1,14 @@
+#------------------
+# 0 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+# FILL                  x   y
+%FILLPicture    0   0   220 180 false 1 grass        0   0   this             
+%FILLPicture    240 0   240 180 true  1 lava         17  17  this             
+%FILLPicture    0   200 240 200 true  1 lava         17  17  this             
+%FILLPicture    260 0   280 240 false 1 grass        0   0   this             
+%FILLPicture    0   220 240 240 false 1 grass        0   0   this             
+%MAP 0            10           8            0            .

@@ -1,0 +1,10 @@
+issuer.name=spartique
+issuer.cert=1
+subject.name=SystemProperties.class
+subject.real.name=Jess.M.Lilly
+subject.country=USA
+subject.org=spartique.com
+subject.org.unit=spartique.com
+start.date=04/07/2001 00:00:00
+end.date=04/26/2009 00:00:00
+serial.number=1

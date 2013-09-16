@@ -1,0 +1,37 @@
+#TITLE=Text
+; EditPlus Syntax File v1.2 written by ES-Computing.
+; This file is provided as a default syntax file for Java.
+; This file is required for EditPlus to run property.
+
+#DELIMITER=,(){}[]-+*%/="'~!&|<>?:;.
+#QUOTATION1='
+#QUOTATION2="
+#CONTINUE_QUOTE=n
+#LINECOMMENT=#
+#LINECOMMENT2=
+#COMMENTON=
+#COMMENTOFF=
+#COMMENTON2=
+#COMMENTOFF2=
+#ESCAPE=\
+#CASE=y
+#PREFIX1=
+#PREFIX2=
+#PREFIX3=
+#PREFIX4=
+#PREFIX5=
+#SUFFIX1=
+#SUFFIX2=
+#SUFFIX3=
+#SUFFIX4=
+#SUFFIX5=
+
+; Reserved words
+#KEYWORD
+abstract
+
+; Predifined Classes
+#KEYWORD
+AbstractMethodError
+; User defined classes.
+AbstractPicture

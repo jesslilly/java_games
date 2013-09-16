@@ -1,0 +1,53 @@
+#------------------
+# 0 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+# Right bank.
+# -----------------------------------------------
+# Right 3X3 diagonal
+Picture         60  0   20  20  false 1 corner       26  26  this           
+Picture         80  20  20  20  false 1 corner       26  26  this           
+Picture         100 40  20  20  false 1 corner       26  26  this           
+Picture         80  0   20  20  false 1 grass        0   0   this           
+%FILLPicture    100 0   100 20  false 1 grass        0   0   this             
+AnimatedPicture 60  20  20  20  true  1 water        7   8   this 9         
+%FILLAnimatedPi 60  40  80  40  true  1 water        7   8   this 9         
+#
+%FILLPicture    120 0   280 100 false 1 grass        0   0   this             
+%FILLAnimatedPi 120 120 220 120 true  1 water        7   8   this 9         
+%FILLPicture    240 120 280 120 false 1 grass        0   0   this             
+# Right 3X3 diagonal
+Picture         120 140 20  20  false 1 corner       26  26  this           
+Picture         140 160 20  20  false 1 corner       26  26  this           
+Picture         160 180 20  20  false 1 corner       26  26  this           
+Picture         140 140 20  20  false 1 grass        0   0   this           
+%FILLPicture    160 140 160 160 false 1 grass        0   0   this             
+AnimatedPicture 120 160 20  20  true  1 water        7   8   this 9         
+%FILLAnimatedPi 120 180 140 180 true  1 water        7   8   this 9         
+#
+%FILLPicture    180 140 280 180 false 1 grass        0   0   this             
+# Left bank.
+# -----------------------------------------------
+Picture         20  100 20  20  false 1 corner       25  25  this           
+Picture         40  100 20  20  false 1 grass        0   0   this           
+%FILLPicture    20  120 40  240 false 1 grass        0   0   this             
+# 3X3 Diagonal
+Picture         60  200 20  20  false 1 corner       27  27  this           
+Picture         80  220 20  20  false 1 corner       27  27  this           
+Picture         100 240 20  20  false 1 corner       27  27  this           
+%FILLPicture    60  220 60  240 false 1 grass        0   0   this             
+Picture         80  240 20  20  false 1 grass        0   0   this           
+%FILLAnimatedPi 80  200 100 200 true  1 water        7   8   this 9         
+AnimatedPicture 100 220 20  20  true  1 water        7   8   this 9           
+# water.
+# -----------------------------------------------
+%FILLAnimatedPi 0   0   0   240 true  1 water        7   8   this 9         
+%FILLAnimatedPi 20  0   40  80  true  1 water        7   8   this 9         
+%FILLAnimatedPi 60  60  100 180 true  1 water        7   8   this 9         
+%FILLAnimatedPi 120 200 280 240 true  1 water        7   8   this 9         
+# Mortal
+Mortal          40  100 20  20  true  2 Ghost        0   0   this             
+%MAP 7            0            3            9            .

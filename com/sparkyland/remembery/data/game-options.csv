@@ -1,0 +1,12 @@
+# object, x, y, w, h,solid,l,name,image,fr1,fr2,fre,def
+# Top frame.
+IncludeCSVFile,top-frame.csv
+WButton,380,10,100,30,false,2,newGame,buttonbackground,0,0,0,0,0,SansSerif,New Game,White,Clear,ClearAndLoad,gamescreen.csv
+# Bottom frame.
+ColorBox,0,100,600,400,false,1,GameBackground,100,180,100
+ColorBox,10,110,320,170,false,2,chooseDeckBackground,170,180,200
+WMultipleChoice,deckName,deck-names.csv,null
+WMultipleChoice,deckChoice,deck-pictures.csv,deckName
+WButton,20,120,100,30,false,2,previousDeck,buttonbackground,0,0,0,0,0,SansSerif,<- Previous,White,Clear,previous,deckChoice
+WButton,220,120,100,30,false,2,nextDeck,buttonbackground,0,0,0,0,0,SansSerif,Next ->,White,Clear,next,deckChoice
+WLabel,20,250,100,20,false,2,deckLabel,null,0,0,0,0,0,SansSerif,Choose Deck:,White,Clear

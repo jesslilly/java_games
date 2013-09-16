@@ -1,0 +1,22 @@
+#------------------
+# 0 canvas.
+# 
+# object        x   y   w   h   solid l name         fr1 fr2 appl fre vx  vy
+# ------------- --- --- --- --- ----- - ------------ --- --- ---- --- --- --- 
+#         1         2         3         4         5         6         7
+#12345678901234567890123456789012345678901234567890123456789012345678901234567
+# FILL                  x   y
+%FILLPicture    0   240 280 240 true  1 grass        0   0   this             
+%FILLPicture    280 140 280 220 true  1 grass        0   0   this             
+%FILLAnimatedPi 0   220 240 220 false 1 sky          7   7   this 99          
+%FILLAnimatedPi 0   140 240 200 true  1 sky          7   7   this 99          
+%FILLAnimatedPi 0   120 240 120 true  1 sky          7   7   this 99          
+%FILLAnimatedPi 260 120 280 120 false 1 sky          7   7   this 99          
+%FILLAnimatedPi 0   0   280 100 true  1 sky          7   7   this 99          
+# Skull
+Picture         0   200 20  20  false 3 skull        8   8   this             
+# Latter
+%FILLPicture    260 140 260 220 false 1 latter       12  12  this             
+Picture         0   220 20  20  true  2 barrel       18  18  this             
+Mortal          100 220 20  20  true  2 Ghost        0   0   this             
+%MAP ruin-tallcol null         null         null         .

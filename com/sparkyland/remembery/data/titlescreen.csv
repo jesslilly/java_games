@@ -1,0 +1,13 @@
+# object, x, y, w, h,solid,l,name,image,fr1,fr2,fre,def
+# Top frame.
+IncludeCSVFile,top-frame.csv
+WButton,380,10,100,30,false,2,newGame,buttonbackground,0,0,0,0,0,SansSerif,New Game,White,Clear,ClearAndLoad,gamescreen.csv
+WButton,490,10,100,30,false,2,credits,buttonbackground,0,0,0,0,0,SansSerif,Credits,White,Clear,ClearAndLoad,credits.csv
+WButton,380,50,100,30,false,2,gameOptions,buttonbackground,0,0,0,0,0,SansSerif,Game Options,White,Clear,ClearAndLoad,game-options.csv
+WLabel,490,50,100,30,false,2,highScores,buttonbackground,0,0,0,0,0,SansSerif,High Scores,White,Clear,ClearAndLoad,high-scores.csv
+# Bottom frame.
+ColorBox,0,100,600,400,false,1,TitleBackground,200,220,200
+Picture,0,80,600,400,false,1,knomes,knomes-playings-cards2
+#WButton,0,80,600,400,false,1,knomes,knomes-playings-cards2,0,0,0,0,0,SansSerif, ,White,Clear,ClearAndLoad,gamescreen.csv
+WLabel,440,460,140,20,false,2,version,null,0,0,0,0,0,SansSerif,version 1.02Jc-HMsl5,White,Clear
+Music,overworld.mid

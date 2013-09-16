@@ -1,0 +1,35 @@
+# object, x, y, w, h,solid,l,name,image,fr1,fr2,fre,def
+# Top frame.
+IncludeCSVFile,top-frame.csv
+WButton,380,10,100,30,false,2,back,buttonbackground,0,0,0,0,0,SansSerif,Back,White,Clear,ClearAndLoad,titlescreen.csv
+# Bottom frame.
+ColorBox,0,100,600,400,false,1,CreditsBackground,255,200,180
+WLabel,250,100,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Programming,White,Clear
+WLabel,250,120,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Jess Lilly,White,Clear
+WLabel,250,140,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Art,White,Clear
+WLabel,250,160,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Jess Lilly,White,Clear
+WLabel,250,180,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Sam Lilly,White,Clear
+WLabel,250,200,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Carin Lilly,White,Clear
+WLabel,250,220,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Music,White,Clear
+WLabel,250,240,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Sam Lilly,White,Clear
+WLabel,250,260,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,145 Design 'Alliance',White,Clear
+WLabel,250,280,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Mark Johnson,White,Clear
+WLabel,250,300,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Todd Slager,White,Clear
+WLabel,250,320,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Testing,White,Clear
+WLabel,250,340,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Heath McAllister,White,Clear
+WLabel,250,360,140,20,false,2,credit1,null,0,0,0,0,0,SansSerif,Sasha 'the Edge' Smith,White,Clear
+BoundedSprite,120,340,55,98,false,2,bugle,bugle,1,2,2,4,0,100,0,105,500,2
+# Scrolling Cards
+BoundedSprite,0,440,40,60,false,2,card1,cell-phone,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,50,440,40,60,false,2,card1,heath,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,100,440,40,60,false,2,card1,mrseriouswtree,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,150,440,40,60,false,2,card1,pig,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,200,440,40,60,false,2,card1,backofcard,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,250,440,40,60,false,2,card1,invisiblecross,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,300,440,40,60,false,2,card1,eggplant,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,350,440,40,60,false,2,card1,invisiblecross,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,400,440,40,60,false,2,card1,smilecollage,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,450,440,40,60,false,2,card1,cell-phone,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,500,440,40,60,false,2,card1,pig,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,550,440,40,60,false,2,card1,mrseriouswtree,0,0,0,2,0,-40,0,610,500,3
+BoundedSprite,600,440,40,60,false,2,card1,backofcard,0,0,0,2,0,-40,0,610,500,3
